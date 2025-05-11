@@ -10,6 +10,8 @@
 
 ✅ Improved the user experience by providing clear, professional, structured responses while reducing hallucinations through strict context-relevance enforcement.
 
+![Alt text](https://github.com/ananya472/Soybot/blob/main/Screenshot%20(15).png?raw=true)
+
 # Features
 Context-aware Q&A based on company documents
 
@@ -41,3 +43,5 @@ python create_memory_for_llm.py
 Run the Flask App:
 python app.py
 Visit http://localhost:5000 to use the chatbot.
+
+
