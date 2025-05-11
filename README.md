@@ -9,3 +9,35 @@
 ✅ Preprocessed and embedded company documents using sentence-transformers, ensuring high semantic fidelity and rapid context matching within the knowledge base.
 
 ✅ Improved the user experience by providing clear, professional, structured responses while reducing hallucinations through strict context-relevance enforcement.
+
+# Features
+Context-aware Q&A based on company documents
+
+Uses FAISS for fast document retrieval
+
+Powered by Hugging Face LLMs for generating responses
+
+Simple Flask web interface
+
+Supports questions in both English and Hindi
+
+# Architecture
+Document Ingestion: Upload PDFs (e.g., Company Profile, FAQs, Product Specs) for processing.
+
+Vector Store: Embeds document text into vectors using sentence-transformers, stored in FAISS.
+
+LLM Integration: Uses Hugging Face models for generating answers.
+
+Agentic Workflow: Routes questions based on keywords (e.g., "define", "calculate").
+
+# Setup & Usage
+Install Dependencies:
+pip install -r requirements.txt
+
+Ingest Documents:
+Place your PDF files in the data/ folder and run:
+python create_memory_for_llm.py
+
+Run the Flask App:
+python app.py
+Visit http://localhost:5000 to use the chatbot.
